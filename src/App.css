@@ -1,0 +1,70 @@
+:root{
+  /* PRINCIPAL*/
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+  /* NEUTRAL */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+
+  /* FONT SIZE*/
+  --tam-font: 18px; /* (card titles e.g. Work, Play)*/
+  /* --Weights: 300, 400, 500 */
+}
+
+.App {
+  display: grid;
+  place-items: center;
+  background-color: var(--Very-dark-blue);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-content: stretch;
+}
+.container-navbar-user{
+  color: white;
+  background-color: var(--Blue);
+  height: 40vh;
+  border-radius: 15px;
+
+}
+.container-user .container-times{
+  background-color: var(--Dark-blue);
+  height: 25vh;
+  border-radius: 15px;
+  margin-top: -15px;
+}
+.container-user{
+  
+  height: 65vh;
+  width: 25vh;
+}
+.container-tasks{
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  height: 65vh;
+  width: 75vh;
+}
+.container-navbar-tasks, .container-footer-tasks{
+  display: flex;
+  align-content: stretch;
+}
+.container-work, .container-play, .container-study, .container-excercise, .container-social, .container-self-care{
+  border: solid white 2px;
+  margin-right: 20px;
+  height: 30vh;
+  color: white;
+  width: 20vh;
+  border-radius: 15px;
+}
+.container-times{
+  background-color: var(--Very-dark-blue);
+}
