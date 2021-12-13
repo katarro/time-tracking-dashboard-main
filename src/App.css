@@ -1,4 +1,4 @@
-:root{
+:root {
   /* PRINCIPAL*/
   --Blue: hsl(246, 80%, 60%);
   --Light-red-work: hsl(15, 100%, 70%);
@@ -18,46 +18,72 @@
   --tam-font: 18px; /* (card titles e.g. Work, Play)*/
   /* --Weights: 300, 400, 500 */
 }
-
+.container {
+  display: grid;
+  place-items: center;
+  background-color: var(--Very-dark-blue);
+}
+.info > img {
+  width: 60px;
+  border-radius: 50%;
+  border: solid white 2px;
+}
+.info > p {
+  color: var(--Pale-Blue);
+  padding-top: 15px;
+}
+.info > h1 {
+  font-weight: 300;
+  margin-top: -20px;
+}
+.info {
+  padding-top: 20px;
+}
 .App {
   display: grid;
   place-items: center;
   background-color: var(--Very-dark-blue);
   height: 100vh;
-  width: 100%;
   display: flex;
   align-content: stretch;
 }
-.container-navbar-user{
+.container-navbar-user {
   color: white;
   background-color: var(--Blue);
   height: 40vh;
   border-radius: 15px;
-
+  padding-left: 15px;
+  position: relative;
+  z-index: 1;
 }
-.container-user .container-times{
+.container-user .container-times {
   background-color: var(--Dark-blue);
   height: 25vh;
   border-radius: 15px;
   margin-top: -15px;
 }
-.container-user{
-  
+.container-user {
   height: 65vh;
   width: 25vh;
 }
-.container-tasks{
+.container-tasks {
   display: grid;
   place-items: center;
   gap: 10px;
   height: 65vh;
   width: 75vh;
 }
-.container-navbar-tasks, .container-footer-tasks{
+.container-navbar-tasks,
+.container-footer-tasks {
   display: flex;
   align-content: stretch;
 }
-.container-work, .container-play, .container-study, .container-excercise, .container-social, .container-self-care{
+.container-work,
+.container-play,
+.container-study,
+.container-excercise,
+.container-social,
+.container-self-care {
   border: solid white 2px;
   margin-right: 20px;
   height: 30vh;
@@ -65,6 +91,16 @@
   width: 20vh;
   border-radius: 15px;
 }
-.container-times{
+.container-times {
   background-color: var(--Very-dark-blue);
+  color: white;
+}
+.info-times {
+  padding-left: 15px;
+  padding-top: 25px;
+}
+.navbar-target{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
 }
